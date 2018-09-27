@@ -11,10 +11,7 @@ class AuthForm extends React.Component {
 
     return (e) => {
 
-      const value = e.target.type === 'checkbox' ?
-            e.target.checked :
-            e.target.value;
-
+      const value = e.target.type;
       this.setState({[field]: value});
     };
   }
@@ -57,20 +54,6 @@ class AuthForm extends React.Component {
             onChange={this.update("password").bind(this)}
             />
           <br />
-          <input
-           type="checkbox"
-           checked={this.state.male}
-           onChange={this.update("gender").bind(this)}
-           />
-          <label>Male</label>
-
-          <input
-             type="checkbox"
-             checked={this.state.gender}
-             onChange={this.update("gender").bind(this)}
-           />
-          <label>Female</label>
-
           <input className="auth-form-button" type="submit" value={this.props.formType} />
         </form>
       </div>
