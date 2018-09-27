@@ -1,5 +1,5 @@
 {
-  "name": "FriendFinder",
+  "name": "FindFriends",
   "private": true,
   "dependencies": {
     "babel-core": "^6.26.0",
@@ -33,13 +33,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/TWSummer/FriendFinder.git"
+    "url": "git+https://github.com/bryce2122/FindFriends.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/TWSummer/FriendFinder/issues"
+    "url": "https://github.com/bryce2122/FindFriends/issues"
   },
-  "homepage": "https://github.com/TWSummer/FriendFinder#readme"
+  "homepage": "https://github.com/bryce2122/FindFriends#readme"
 }
