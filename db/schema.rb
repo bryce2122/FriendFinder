@@ -12,6 +12,11 @@
 
 ActiveRecord::Schema.define(version: 20180207214637) do
 
+
+  # These are extensions that must be enabled in order to support this database
+  enable_extension "plpgsql"
+
+
   create_table "messages", force: :cascade do |t|
     t.integer "sender_id", null: false
     t.integer "recipient_id", null: false
@@ -83,7 +88,9 @@ ActiveRecord::Schema.define(version: 20180207214637) do
     t.index ["user_id"], name: "index_search_queries_on_user_id"
   end
 
-  create_table "users", force: :cascade do |t|
+
+  create_table "users", user_id: :serial, force: :cascade do |t|
+
     t.string "username", null: false
     t.string "password_digest", null: false
     t.string "session_token", null: false
