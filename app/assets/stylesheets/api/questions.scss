@@ -1,0 +1,310 @@
+// Place all the styles related to the api/Questions controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.question-page-header {
+  width: 100%;
+  background-color: #104da1;
+  height: 104px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.question-inner-header {
+  width: 1000px;
+}
+
+.question-inner-header a {
+  display: flex;
+  align-items: center;
+}
+
+.question-inner-header img {
+  width: 70px;
+  height: 70px;
+  border-radius: 35px;
+  margin: 0 15px;
+}
+
+.question-inner-header svg {
+  font-size: 32px;
+  color: #fff;
+}
+
+.question-inner-header h2 {
+  font-size: 24px;
+  color: #fff;
+}
+
+.question-main {
+  width: 880px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.question-section {
+  width: 510px;
+}
+
+.question-aside {
+  width: 320px;
+}
+
+.question-section h2 {
+  font-size: 18px;
+  margin: 24px 0;
+  font-weight: bold;
+}
+
+.question-article {
+  padding: 12px;
+  border-radius: 4px;
+  box-shadow: -5px 5px 10px 2px #555555;
+}
+
+.question-article h3 {
+  font-size: 16px;
+  color: #222;
+  font-weight: bold;
+  margin-top: 15px;
+  margin-bottom: 24px;
+}
+
+.question-form h4 {
+  font-size: 15px;
+  color: #222;
+  font-weight: bold;
+  margin: 24px 0;
+}
+
+.radio-label, .check-label {
+  display: block;
+  position: relative;
+  padding-left: 36px;
+  margin-bottom: 14px;
+  cursor: pointer;
+  font-size: 16px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.radio-button, .checkbox {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.checkmark {
+  position: absolute;
+  top: -4px;
+  left: 0;
+  height: 24px;
+  width: 24px;
+  background-color: #e1e1e1;
+  border-radius: 2px;
+}
+
+.check-label:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+.check-label input:checked ~ .checkmark {
+  background-color: #2196F3;
+}
+
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+.check-label .checkmark:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.check-label input ~ .disable-checkboxes {
+  background-color: #aaa;
+}
+
+.check-label:hover input ~ .disable-checkboxes {
+  background-color: #aaa;
+}
+
+.disable-checkboxes {
+  cursor: default;
+}
+
+.selected-radio {
+  position: absolute;
+  top: -4px;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #e1e1e1;
+  border-radius: 50%;
+}
+
+.radio-label:hover input ~ .selected-radio {
+  background-color: #ccc;
+}
+
+.radio-label input:checked ~ .selected-radio {
+  background-color: #2196F3;
+}
+
+.selected-radio:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.radio-label input:checked ~ .selected-radio:after {
+  display: block;
+}
+
+.radio-label .selected-radio:after {
+  top: 9px;
+  left: 9px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: white;
+}
+
+.answer-buttons {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.answer-button, .skip-button {
+  height: 44px;
+  width: 120px;
+  margin: 0 20px;
+  text-align: center;
+  font-size: 18px;
+  border-radius: 8px;
+  font-weight: bold;
+}
+
+.answer-button {
+  background-color: #0d8;
+  color: #fff;
+  border: 1px solid #0a5;
+}
+
+.answer-button:hover {
+  background-color: #0fa;
+}
+
+.skip-button {
+  background-color: #ddd;
+  border: 1px solid #aaa;
+  color: #888;
+}
+
+.skip-button:hover {
+  background-color: #ccc;
+}
+
+.importance-selector {
+  display: flex;
+  justify-content: space-between;
+}
+
+.importance-button {
+  width: 155px;
+  height: 30px;
+  border-radius: 5px;
+  margin-bottom: 12px;
+  background-color: #ddd;
+}
+
+.importance-button:hover {
+  background-color: #ccc;
+}
+
+.importance-labels {
+  display: flex;
+  justify-content: space-around;
+}
+
+.importance-highlight {
+  background-color: #57d;
+}
+
+.importance-highlight:hover {
+  background-color: #59d;
+}
+
+.highest-percentage {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.highest-percentage h1 {
+  font-size: 72px;
+  color: #57d;
+}
+
+.highest-percentage h2 {
+  font-size: 48px;
+  color: #57d;
+}
+
+.highest-percentage-outer-box h4 {
+  font-size: 16px;
+  font-weight: 700;
+  color: #57d;
+  margin-bottom: 20px;
+}
+
+.highest-percentage-outer-box {
+  margin: 0 12px;
+  margin-top: 80px;
+  border-bottom: 1px solid #ccc;
+}
+
+.disable-importance {
+  background-color: #aaa;
+}
+
+.disable-importance:hover {
+  background-color: #aaa;
+}
+
+.question-aside h3 {
+  font-size: 16px;
+  font-weight: 700;
+  margin: 30px 0;
+  padding-bottom: 30px;
+  padding-left: 12px;
+  border-bottom: 1px solid #ddd;
+}
+
+.question-errors {
+  color: #f75;
+  margin-bottom: 6px;
+}
+
+.error-list {
+  margin: 12px 0;
+}
